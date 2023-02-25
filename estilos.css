@@ -1,21 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
-@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
-.contendor-busquedad{
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+  @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+  
+  body {
+    background-image: url(/img/pokemonfondo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    transition: 1s;
+  }
+  
+  #titulo {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 4em;
+    color: #FF6347;
+    text-shadow: 2px 2px 2px #000;
+  }
+  
+  #titulo strong {
+    color: #FFD700;
+  }
+  
+  .contendor-busquedad{
     
     text-align: center;
     padding: 15px;
     margin: 0 auto;
     
 }
-h1{
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-}
+
 
 .contendor-busquedad button{
     width: 100px;
@@ -45,7 +64,7 @@ h1{
     justify-content: space-around;
     align-items: center;
     width: 800px;
-    height: 500px;
+    min-height: 300px; /* Establecer un mínimo de altura */
     background-color: aliceblue;
     text-align: center;
     box-shadow: 7px 5px 5px 7px #000;
@@ -55,11 +74,62 @@ h1{
 }
 .informacion p{
     
-    font-family: 'Climate Crisis',sans-serif,monospace, cursive;
-    
-    font-size: 15px;
-    font-style: style-pokemon;
-    color: #3b3b3b;
+   
+
+    font-family: 'Climate Crisis', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #3b3b3b;
+  margin-bottom: 2px;
+ 
+  background-color: #fffacd;
+  border: 1px solid #ec5c5c;
+  padding: 3px;
     
     
 }
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .fade-in.show {
+    opacity: 1;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* styles for screens smaller than 768px */
+    #titulo {
+      font-size: 2rem;
+    }
+  
+    .contendor-busquedad {
+      padding: 10px;
+    }
+  
+    .contendor-busquedad button {
+      width: 80px;
+      height: 25px;
+      font-size: 0.8rem;
+      margin: 5px;
+    }
+  
+    #search {
+      width: 200px;
+      height: 25px;
+      font-size: 0.8rem;
+      margin: 5px;
+    }
+  
+    .informacion {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      padding: 10px;
+    }
+  
+    .informacion p {
+      font-size: 0.9rem;
+    }
+  }
+  

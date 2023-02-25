@@ -3,7 +3,7 @@ searchBtn.addEventListener('click',(e)=>{
     e.preventDefault()
     let search = document.querySelector('#search').value
     let informacion = document.querySelector('.informacion')
-  
+    
     fetch( url = `https://pokeapi.co/api/v2/pokemon/${search}`)
     .then(res => res.json())
     .then(data => {
@@ -25,6 +25,7 @@ searchBtn.addEventListener('click',(e)=>{
         <p> Stats: ${data.stats.map(stat => `${stat.stat.name}: ${stat.base_stat}`).join(', ')}</p>
         `
         informacion.append(div)
+        informacion.classList.add('show');
     })
     .catch(error => {
         console.error(error);
