@@ -55,7 +55,7 @@ h1{
 }
 .informacion p{
     
-    font-family: 'Climate Crisis', cursive;
+    font-family: 'Climate Crisis',sans-serif,monospace, cursive;
     
     font-size: 15px;
     font-style: style-pokemon;
