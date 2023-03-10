@@ -1,4 +1,4 @@
-alert('Ingrese un nombre de Pokemon')
+
 let searchBtn = document.querySelector('button');
 searchBtn.addEventListener('click',(e)=>{
     e.preventDefault()
